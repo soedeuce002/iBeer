@@ -16,6 +16,9 @@ body{
     line-height: 1.8;
     margin: 0;
     background-color: #eeebda;
+
+
+
 }
 h1, h2, h3{
     font-family: "Josefin Sans", sans-serif;
@@ -31,6 +34,7 @@ img{
 }
 .wrapper{
     width: 1000px;
+
 
     /*
         TODO:
@@ -54,10 +58,10 @@ img{
 
     /*
         TODO:
-        - Add a background image "header-img.jpg"
+    DONE- Add a background image "header-img.jpg"
         make sure that the path to the image is correct
     */
-
+    background-image: url("img/header-img.jpg");
     background-size: cover;
     background-position: right bottom;
 }
@@ -65,36 +69,37 @@ img{
 #site-header div h3{
     margin: 0;
     line-height: 1;
-    position: relative;
-}
+    }
 #site-header div h1{
-  border: 5px solid green;
-    top: 20px;
+    position: relative;
+    top: 30px;
 
-    /* Remove border when done */
-}
+    }
 #site-header div h3{
-  border: 5px solid black;
+    position: relative;
+    font-family: "Dancing Script";
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
     /*
         TODO:
-        - Use the script font: 'Dancing Script' for this text
-        -Remove border when done
+    DONE- Use the script font: 'Dancing Script' for this text
+
     */
 }
 #main-navigation{
     background: #444;
-border: 5px solid blue;
+display: flex;
+justify-content: space-between;
+justify-content: space-around;
     /*
         TODO:
         - Use Flexbox to arrange the navigation links
-        -Remove border when done
+
     */
 }
 #main-navigation a{
-  border: 4px solid orange;
+
     display: block;
     color: white;
     text-decoration: none;
@@ -110,6 +115,7 @@ border: 5px solid blue;
 #main-navigation #logo{
     margin-right: 400px;
 
+
     /*
         TODO:
         - Flexbox - The logo needs to take up more space
@@ -121,6 +127,7 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -132,7 +139,9 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-  border: 5px solid #1fabe5;
+    border: 5px solid #1fabe5;
+  display: flex;
+  flex-direction: column;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -146,6 +155,10 @@ aside h3{
     padding: 0 0 10px 0;
     /* border-bottom: 1px solid #ccc; */
     border: 5px solid blue;
+    /* TODO
+        -Remove blue border
+        -Uncomment original border */
+
 }
 aside img{
     border-radius: 50%;
@@ -193,12 +206,17 @@ article footer p{
 #site-footer{
 
 border: 5px solid red;
-
-    background: #333;
+color: white;
+height: 50px;
+background: #333;
+display: flex;
+justify-content: center;
+align-items: center
     /*
         TODO:
         - Style the site footer
-        /* *Remove border when done */
+        - Remove border when done
+        - Figure out how to center text vertically
     */
 }
 /* Check to make sure...but i think everything below this line can be deleted..
